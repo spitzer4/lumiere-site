@@ -195,7 +195,7 @@ nav ul li {
 	background-color: var(--ivory);
 }
 
-.scent-card p, h3 {
+.scent-card p, .scent-card h3 {
 	padding: 10px 15px;
 	margin: 0px;
 }
@@ -267,7 +267,8 @@ nav ul li {
 footer {
     background-color: var(--brown);
     color: var(--ivory);
-    padding: 40px 20px;
+    padding: 61px 124px;
+	padding-bottom: 67px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -276,26 +277,43 @@ footer {
 .newsletter {
     max-width: 400px;
 	border-radius: 12px;
+	padding: 24px;
+	max-width: 612px;
+}
+
+.newsletter h3 {
+	font-size: 36px;
 }
 
 .newsletter input {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 13px 20px;
+	margin: 24px 0;
+    height: 56px;
+	width: 562px;
 	border-radius: 12px;
+	font-family: 'Poppins', sans-serif;
 }
 
 .join-us {
-    width: 100px;
-    padding: 10px;
+    width: 135px;
+	padding: 13px 25px;
+    margin: 24px 0;
     background-color: var(--gold);
     border: none;
     font-size: 16px;
 	border-radius: 12px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.socials {
+	padding: 200px 125px;
+	font-size: 36px;
 }
 
 .socials a {
     display: block;
     color: var(--ivory);
     margin-bottom: 10px;
+	border-bottom: 2px solid var(--ivory); 
 }
