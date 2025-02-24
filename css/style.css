@@ -1,0 +1,172 @@
+:root {
+	--ivory: #F8F8F8;
+	--gold: #D4AF37;
+	--charcoal: #2C2C2C;
+	--beige: #EDE0D4;
+	--blush: #C4A29E;
+	--brown: #3E2C2C;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--charcoal);
+    background-color: var(--ivory);
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--ivory);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.cart {
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url("/images/gold-hero.jpg") center/cover no-repeat;
+    color: var(--ivory);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    background-color: var(--charcoal);
+    color: var(--ivory);
+    border: none;
+    font-size: 16px;
+    transition: 0.3s;
+	border-radius: 12px;
+}
+
+.cta-button:hover {
+    background-color: gray;
+}
+
+/* Scents Section */
+.scents {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.scents-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.scent-card {
+    background: var(--ivory);
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+}
+
+.scent-card img {
+    width: 100%;
+    height: auto;
+}
+
+.shop-now {
+    background-color: var(--gold);
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 20px;
+	border-radius: 12px;
+}
+
+/* About Section */
+.about {
+    background-color: var(--ivory);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--brown);
+    color: var(--ivory);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.newsletter {
+    max-width: 400px;
+	border-radius: 12px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+	border-radius: 12px;
+}
+
+.join-us {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--gold);
+    border: none;
+    font-size: 16px;
+	border-radius: 12px;
+}
+
+.socials a {
+    display: block;
+    color: var(--ivory);
+    margin-bottom: 10px;
+}
