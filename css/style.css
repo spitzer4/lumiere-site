@@ -127,29 +127,100 @@ nav ul li {
 }
 
 /* Scents Section */
-.scents {
-    text-align: center;
-    padding: 50px 20px;
+.our-signature-scents {
+    /* padding: 40px; */
+    text-align: left; /* Align text to the left within the section */
 	background-color: var(--beige);
 }
 
-.scents-container {
+.section-title {
+    display: flex; /* Use flexbox for title and card alignment */
+    align-items: flex-start;
+	padding: 180px 69px;
+}
+
+.scent-titles {
+	flex-direction: column;
+}
+
+.our-signature-scents h2 {
+    padding-left: 0px;
+	padding-right: 27px;
+	padding-bottom: 31px;
+	max-width: 313px;
+	margin: 0;
+}
+
+.scent-slider {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 87px;
+}
+
+.slider-controls {
+	color: var(--charcoal);
+	border: none;
+	padding-top: 167px;
+}
+
+.slider-controls button {
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--ivory);
+	height: 67px;
+	width: 75px;
+	/* color: var(--charcoal); */
+}
+
+.slider-controls .next-button, .prev-button {
+	color: var(--charcoal);
+	font-size: 35px;
+	background-color: var(--ivory);
+	border-radius: 12px;
+	border: none;
+}
+
+.slider-controls .prev-button {
+	margin-right: 82px;
 }
 
 .scent-card {
-    background: var(--ivory);
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+	width: 355px;
+	height: auto;
+    /* flex: 0 0 calc(33.33% - 20px); Three cards per row with spacing */
+    text-align: left;
+    box-sizing: border-box;
 	border-radius: 12px;
+	background-color: var(--ivory);
+}
+
+.scent-card p, h3 {
+	padding: 10px 15px;
+	margin: 0px;
+}
+
+.scent-card p {
+	font-size: 16px;
+}
+
+.scent-card h3 {
+	font-size: 24px;
 }
 
 .scent-card img {
-    width: 100%;
-    height: auto;
+    max-width: 355px; /* Image takes full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents a small space below the image */
+    margin-bottom: 10px; /* Space between image and text */
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.scent-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
 .shop-now {
@@ -158,6 +229,11 @@ nav ul li {
     border: none;
     margin-bottom: 20px;
 	border-radius: 12px;
+	width: 157px;
+	color: var(--ivory);
+	font-family: 'Lora', serif;
+	text-align: center;
+	font-size: 24px;
 }
 
 /* About Section */
